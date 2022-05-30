@@ -1,0 +1,68 @@
+ <div class="container mt-5">
+    <div class="card " >
+       <div class="nav" style="height:50px">
+           <p style="color:orange" class="ms-2 mt-3">Mentor List</p>
+           <form class="mt-2">
+           <input type="text" style="background-color: #F4F5F8; width:400px; margin-left: 600px;position: absolute; " class="form-control">
+       
+         </form>
+         <button mat-button (click)="openDialog()" class="btn btn-warning mt-2" style=" position: absolute; margin-left: 1100px;">+ New Mentor</button>
+
+   
+       </div>
+   
+   </div>
+   
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog">
+         <div class="modal-content">
+           <div class="modal-header">
+             <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+           <div class="modal-body">
+             
+           </div>
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary">Save changes</button>
+           </div>
+         </div>
+       </div>
+     </div>
+     
+   
+     <table class="table  table-hover">
+       <thead>
+         <tr>
+           <th scope="col"><input type="checkbox"></th>
+           <th scope="col">No</th>
+           
+           <th scope="col">Mentor Name</th>
+           <th scope="col">Employee ID</th>
+
+           <th scope="col">Email ID</th>
+           <th scope="col">Skills</th>
+           
+           
+           <th scope="col">Action</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <th scope="col"><input type="checkbox"></th>
+           <td scope="col">01</td>
+           <td scope="col">Abhishek</td>
+           <td scope="col">  </td>
+           <td scope="col">  </td>
+           <td scope="col">front-end</td>
+        
+           
+           
+           <td scope="col">Action</td>
+         </tr>
+         
+       </tbody>
+     </table>
+   
+    </div>

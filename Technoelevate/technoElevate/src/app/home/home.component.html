@@ -1,0 +1,38 @@
+<div class="backImg" *ngIf="visitData">
+    <img src="https://fanphdac.com/wp-content/uploads/2021/05/12-8-1.jpg" height="780px" width="1600px" >
+</div>
+
+<div>
+<div class="innerImg" style="display: inline-block;">
+    <img src="https://s3.ap-south-1.amazonaws.com/content.imsindia.com/ims-india/wp-content/uploads/2021/11/our-approach.jpg" height="580px" width="550px"  >
+    <h4 style="position: absolute; color:white; font-size:50px; margin-top:-130px; margin-left:10px;">Good things on </h4>
+    <h4 style="position: absolute; color:white; font-size:50px; margin-top:-80px; margin-left:10px;">Your Way </h4>
+
+    <div style="background-color: rgb(73, 72, 72); display:inline-block; height:580px; width:450px; margin-top: -1px; position: absolute;">
+<div class="loginPage ms-2" style="display: inline-block; ">
+    <div class="ms-3 mt-5">
+    <img src="https://technoelevate.com/images/logo.png" height="100px" width="200px">
+
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <div class="formGroup mt-2">
+          <input type="email" class="form-control" placeholder="Enter your Email" name="Email" required [(ngModel)]="Email" >
+        </div>
+        <div class="formGroup mt-3">
+          <input type="password" class="form-control" placeholder="Enter your Password" name="pwd" required [(ngModel)]="pwd" >
+        </div>
+        
+        <div class="float-end">
+        <button class="btn btn-secondary mt-2" type="submit" [disabled]="loginForm.invalid">Login</button>
+        </div>
+    </form>
+<footer style="margin-top: 80px;">
+    <hr style="color: white; "> 
+   <pre> <p style="color: white; font-size:10px; margin-top: -20px; ">Copyright © 2018 Aleercio.com      Terms & Conditions | Privacy Policy</p> </pre>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- <button class="btn btn-warning" style="width: 100px;background-color: transparent;  position: absolute; margin-left: -50px;" (click)="admi()">cancel</button> -->
+<!-- <router-outlet></router-outlet> -->

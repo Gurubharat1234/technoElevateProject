@@ -1,0 +1,27 @@
+.example-container {
+    width: auto;
+    height: 1200px;
+    margin: 10px;
+    /* border: 1px solid #555; */
+  }
+  .icon-bar {
+    width: 90px; 
+    background-color:white; 
+  }
+  
+  .icon-bar a {
+    display: block; 
+    text-align: center;
+    padding: 16px; 
+    transition: all 0.3s ease;
+    color:black; 
+    font-size: 36px;
+  }
+  
+  .icon-bar:hover{
+    background-color:white; 
+  }
+  
+  .active {
+    background-color:white; 
+  }

@@ -1,0 +1,33 @@
+<div class="shadow-sm p-3  bg-body rounded" *ngIf="datatoggle">
+    <img src="../../assets/img/wepik-2022319-214333/1642742004808.jpg" alt="" srcset="" height="50px" width="150px">
+    <div class="col-md-4 offset-md-4" style="display: inline-block;">
+    <input type="text" class="form-control"  style="background-color: #BCBCCB;" placeholder="Search/mentor">
+</div>
+<div style="margin-left: 200px; margin-top: 10px; display: inline-block;"> 
+<button class="btn btn-primary" ><a href="" style="text-decoration: none; color:white;">logout</a> </button>
+</div>
+</div>
+
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+      <div class="icon-bar">
+          <a class="active" (click)="mentorsDatarender()"><img src="../../assets/img/wepik-2022319-214333/group (1).png" ></a> <p style="margin-left: 27px; margin-top: -10px; color:rgb(38, 0, 143)">Batch</p>
+          <a  class="active" (click)="navData()"><img src="../../assets/img/wepik-2022319-214333/team (3).png" ></a>
+          <a class="active"  (click)="requestDatadetails()"><img src="../../assets/img/wepik-2022319-214333/add-user.png" alt="" srcset=""></a>
+        </div>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div *ngIf="navDatadeta">
+      <app-mentor></app-mentor>
+
+    </div>
+    <div *ngIf="mentorsData">
+      <app-nav></app-nav>
+
+    </div>
+    <div *ngIf="requestData">
+      <app-request></app-request>
+    </div>
+</mat-drawer-content>
+</mat-drawer-container>

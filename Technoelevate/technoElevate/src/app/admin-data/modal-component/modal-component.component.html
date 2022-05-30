@@ -1,0 +1,46 @@
+ <div style="width: 800px; height:500px;">
+<h2 mat-dialog-title>Add new batch</h2>
+<mat-dialog-content class="mat-typography">
+    <form>
+        <div class="mb-3">
+        <label for="">Batch Name</label>
+        <input type="text" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="">Mentor Name</label>
+        <select class="form-control">
+          <option></option>
+          <option value="Abhishek">Abhishek</option>
+          <option value="Gangadhar">Gangadhar</option>
+          <option value="Chethan">Chethan</option>
+          <option value="Jiganshu">Jiganshu</option>
+          <option value="Ajay">Ajay</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="">Technologies</label>
+        <select class="form-control">
+          <option></option>
+          <option value="MEAN">MEAN</option>
+          <option value="MERN">MERN</option>
+          <option value="JAVA FULL STACK">JAVA FULL STACK</option>
+          <option value="PYTHON">PYTHON</option>
+          <!-- <option value="ANGULAR">ANGULAR</option>                                                                                           -->
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="">Start Date</label>
+        <input type="date" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label for="">End Date</label>
+        <input type="date" class="form-control">
+      </div>
+      </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog class="btn btn-outerline-danger ms-3" cdkFocusInitial>Submit</button>
+  
+  <button mat-button [mat-dialog-close]="true" class="btn btn-outerline-success ms-3" cdkFocusInitial>Close</button>
+</mat-dialog-actions>
+</div>
